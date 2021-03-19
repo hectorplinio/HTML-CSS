@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Formulario HTML</title>
+    <meta charset="utf-8">
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 18px;
+            color: blue;
+        }
+        
+        #bloque2 {
+            text-align: center;
+        }
+        
+        * {
+            background-color: aquamarine;
+        }
+        
+        #bloque1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Página de registro de Counter</h1>
+    <hr>
+    <form action="pagina.php" method="POST">
+        <div id="bloque1">
+            <p>
+                Nombre: <input type="text" name="nombre" size="30" /><br> Apellidos: <input type="text" name="apellidos" size="40" /><br> Sexo: <input type="radio" name="sexo" value="h" />Hombre
+                <input type="radio" name="sexo" value="m" />Mujer <br>
+                <input type="checkbox" name="edad" checked="checked" value="edad" />Soy mayor de edad.<br>
+        </div>
+        </p>
+        </p>
+        <div id="bloque2">
+            <p>
+                <input type="submit" name="enviar" value="ENVIAR" /><br>
+                <br>
+                <img src="counter.jpg" width="600px" height="600">
+            </p>
+        </div>
+
+    </form>
+</body>
+
+</html>

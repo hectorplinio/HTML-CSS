@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title>PracticaRepaso</title>
+    <meta charset="utf-8">
+    <style>
+        .bloque1 {
+            background-color: olive;
+            text-align: center;
+        }
+        
+        .bloque2 {
+            float: left;
+            background-color: yellow;
+            padding: 30px;
+            margin: 100px;
+            height: 325px;
+        }
+        
+        .bloque3 {
+            float: left;
+            margin: 100px auto;
+            background-color: orange;
+            width: 50%;
+            padding: 30px;
+        }
+        
+        img {
+            width: 50%;
+            height: 50%;
+        }
+        
+        .bloque4 {
+            background-color: red;
+            text-align: center;
+        }
+        
+        .bloques {
+            text-align: center;
+            background-color: blue;
+            width: 75%;
+            height: 75%;
+            margin-left: 13%;
+            padding: 10px;
+        }
+        
+        @media(min-width: 600px)and(max-width: 800px) {
+            .bloque1 {
+                background-color: olive;
+                text-align: center;
+            }
+            .bloque2 {
+                float: left;
+                background-color: pink;
+                padding: 30px;
+                margin: 100px;
+                height: 325px;
+                display: flex;
+            }
+            .bloque3 {
+                display: flex;
+                margin: 100px auto;
+                background-color: grey;
+                width: 50%;
+                padding: 30px;
+            }
+            img {
+                width: 50%;
+                height: 50%;
+            }
+            .bloque4 {
+                background-color: red;
+                text-align: center;
+            }
+            .bloques {
+                text-align: center;
+                background-color: blue;
+                width: 75%;
+                height: 75%;
+                margin-left: 13%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bloque1">
+        <h1>CABECERA</h1>
+    </div>
+    <div class="bloques">
+        <div class="bloque2">
+            <ul>
+                <li>Principal</li>
+                <li>Segunda pagina</li>
+                <li>Contacto</li>
+            </ul>
+        </div>
+        <div class="bloque3">
+            <img src="panigale.jpg">
+        </div>
+    </div>
+    <div class="bloque4">
+        <h1>PIE DE PAGINA</h1>
+    </div>
+</body>
+
+</html>

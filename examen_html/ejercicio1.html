@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>Ejercicio1</title>
+    <meta charset="utf-8">
+    <style>
+            .padre {
+            background-color: grey;
+            height: 600px;
+        }
+        
+        .bloque1 {
+            background-color: grey;
+        }
+        
+        .bloque2 {
+            background-color: limegreen;
+        }
+        
+        .bloque3 {
+            background-color: yellow;
+        }
+        
+        .bloque4 {
+            background-color: grey;
+        }
+        
+        .bloque5 {
+            background-color: darkgray;
+        }
+        
+        img {
+            height: 300px;
+            width: 300px;
+        }
+        
+        @media screen {
+            {
+                min-width: 480px;
+            }
+            and {
+                max-width: 480px
+            }
+            .bloque1 {
+                background-color: grey;
+            }
+            .bloque2 {
+                background-color: limegreen;
+            }
+            .bloque3 {
+                background-color: yellow;
+            }
+            .bloque4 {
+                background-color: grey;
+            }
+            .bloque5 {
+                background-color: darkgray;
+                padding-bottom: 10px;
+            }
+            @media screen {
+                {
+                    min-width: 480px;
+                }
+                and {
+                    max-width: 1000px
+                }
+                .bloque1 {
+                    background-color: grey;
+                }
+                .bloque2 {
+                    background-color: limegreen;
+                }
+                .bloque3 {
+                    background-color: yellow;
+                }
+                .bloque4 {
+                    background-color: grey;
+                }
+                .bloque5 {
+                    background-color: darkgray;
+                    padding-bottom: 10px;
+                }
+                .padre {
+                    background-color: grey;
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <div class="padre">
+        <div class="bloque1">
+            <h1>Site name</h1>
+        </div>
+        <div class="bloque2">
+            <p>Link1</p>
+            <p>Link2</p>
+            <p>Link3</p>
+        </div>
+        <div class="bloque3">
+            <h2>NVIDIA 3080</h2>
+            <p>La GeForce RTX™ 3080 ofrece el rendimiento ultra que los jugadores anhelan,<br> con tecnología de Ampere, la arquitectura RTX de la segunda generación de NVIDIA.<br> Se ha creado con núcleos RT y núcleos Tensor mejorados, nuevos multiprocesadores
+                de
+                <br> streaming y memoria de G6X superrápida para una increíble experiencia de gaming.</p>
+            <div class="imagen">
+                <img src="3080.png">
+            </div>
+        </div>
+        <div class="bloque4">
+            <div class="bloque5">
+                <h3>NVIDIA 3070</h3>
+                <p>El nuevo diseño de doble flujo axial ofrece el mayor rendimiento térmico posible<br> sin comprometer la acústica del ventilador. Este innovador diseño refuerza el flujo <br> de aire natural del chasis para conseguir un sistema de gaming
+                    mejor refrigerado y <br> más silencioso. </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

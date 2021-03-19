@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <Title>Practica 15</Title>
+    <meta charset="utf-8">
+    <style>
+        * {
+            background-color: aqua;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        #bloque {
+            margin-left: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario de registro</h1>
+    <div id="bloque">
+        <form action="pagina.php" method="POST">
+            <p style="color:yellow">Nombre: <input type="text" name="nombre" value="" /><br></p>
+            <p style="color:orange">Apellidos: <input type="text" name="apellidos" value="" /><br></p>
+            <p style="color:green">Sexo: <input type="radio" name="sexo" value="h" /><span style="color:red">Hombre</span>
+                <input type="radio" name="sexo" value="m" checked="checked" /><span style="color:pink">Mujer</span> </p>
+            <p style="color:blue">Email: <input type="email" name="email" value=""> </p>
+            <p style="color:black">Poblacion: <select name="provincia">
+            <option value="Madrid">Madrid</option>
+            <option value="alicante" selected style="color:red">Alicante</option>
+            <option value="sevilla">Sevilla</option>
+            <option value="valencia">Valencia</option>
+            </select>
+            </p>
+            <p style="color:white">Descripción: <textarea name="info" cols="50" rows="5"></textarea></p>
+            <input type="checkbox" name="checkbox1" value="" /><span style="color:olive">Deseo recibir información sobre novedades y ofertas </span><br>
+            <input type="checkbox" name="checkbox1" value="" /><span style="color:coral">Declaro haber leido y aceptar y las condiciones generales del programa y la normativa sobre protección de datos.</span> <br>
+            <input type="submit" name="enviar" value="ENVIAR" /><br>
+
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>

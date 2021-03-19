@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Formato de tablas</title>
+    <meta charset="utf-8">
+    <style>
+        thead {
+            background-color: blue;
+            font-size: 18px;
+        }
+        
+        tbody {
+            background-color: green;
+            font-size: 12px;
+            font-style: italic;
+        }
+        
+        tfoot {
+            background-color: red;
+            text-decoration: underline;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        td,
+        th {
+            width: 300px;
+            text-align: center;
+            vertical-align: middle;
+            padding: 30px
+        }
+        
+        table,
+        td,
+        th {
+            border: 1px solid yellow
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <td colspan="3">Tipos de coches</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th> Marca</th>
+                <th> Modelo</th>
+                <th> Foto</th>
+            </tr>
+            <tr>
+                <td>BMW</td>
+                <td>X3</td>
+                <td><img src="bmwx3.jpg" widht="300px" height="300px"></td>
+            </tr>
+            <tr>
+                <td>AUDI</td>
+                <td>Q7</td>
+                <td><img src="audiq7.jpg" widht="300px" height="300px"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Coches mas vendidos</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

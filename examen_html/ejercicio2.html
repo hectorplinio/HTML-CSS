@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Ejercicio2</title>
+    <meta charset="utf-8">
+    <style>
+        form {
+            background-color: lightgray;
+            width: 500px;
+            height: 900px;
+            font-weight: bold;
+        }
+        
+        input:hover,
+        select:hover {
+            background-color: green;
+        }
+        
+        input:focus,
+        select:focus {
+            background-color: yellow;
+        }
+        
+        input {
+            width: 100%;
+        }
+        
+        .uno {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="POST">
+        <p>Nombre</p>
+        <p class="uno"><input type="text" name="nombre" value="Nombre" maxlength="20"><input type="text" name="apellidos" value="Apellidos" required></p>
+        <p>Nombre de usuario</p>
+        <p></p><input type="email" name="nombre usuario" value="       @gmail.com" required></p>
+        <p>Contraseña</p>
+        <p></p><input type="password" name="Contraseña" value="" required></p>
+        <p>Confirma tu contraseña</p>
+        <p></p><input type="password" name="contraseña" value="" required>
+        <p>Fecha de nacimiento</p>
+        <p></p><input type="date" name="Dia" value="Día"></p>
+        <p>Sexo</p>
+        <p></p><input type="radio" name="sexo" value="Hombre">Hombre<input type="radio" name="sexo" value="Seleciones tu género">Mujer</p>
+        <p>Telefono movil</p>
+        <p></p><input type="date" name="telefono" value="+34"></p>
+        <p>Tu direccion de correo actual</p>
+        <p></p><input type="email" name="email" value=""></p>
+        <p>Ubicacion</p>
+        <p></p><input type="checkbox" name="España" value="España" checked>España <input type="checkbox" name="Francia" value="Francia">Francia<input type="checkbox" name="Portugal" value="Portugal">Portugal</p>
+        <input type="submit" name="Next" value="Siguiente paso">
+    </form>
+
+</body>
+
+</html>

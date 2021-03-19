@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Pagina ejemplos formularios</title>
+        <meta charset="utf-8">
+        <style>
+            .formulario{
+                font-weight: bold;
+                text-align: left;
+                color:blue;
+                font-style: italic;
+            }
+            input:focus{
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Esta pagina es una pagina de ejemplo de HTML y formularios</h1>
+        <div class="formulario">
+            <form action="pagina.php" method="POST">
+                <p>Nombre:<br><input type="text" name="nombre" value="" placeholder="Escriba aquí su nombre" required> </p>
+                <p>Apellidos:<br><input type="text" name="apellidos" value="" placeholder="Escriba aqui su apellido" required> </p>
+                <p>Usuario:<br><input type="text" name="usuario" value="" placeholder="Escriba aqui su usuario" required> </p>
+                <p>Contraseña:<br><input type="password" name="contraseña" value=""  required></p>
+                <p><input type="submit" name="enviar" value="ENVIAR" ></p>
+            </form>
+        </div>
+        <div class="imagen">
+            <table>
+                <tr>
+                    <td>HOLA</td>
+                </tr>
+            </table>
+        </div>
+        <form>
+
+            <fieldset>
+             <legend>Información Personal</legend>
+             Nombre: <input name='nombre' type='text' tabindex='1'>
+             Apellidos: <input name='apellidos' type='text' tabindex='2'>
+            </fieldset>
+           
+            <fieldset>
+             <legend>edad</legend>
+             <input type='checkbox' tabindex='20'
+                       name='edad' value='20-39' > 20-39
+             <input type='checkbox' tabindex='21'
+                       name='edad' value='40-59' > 40-59
+             <input type='checkbox' tabindex='22'
+                       name='edad' value='60-79' > 60-79
+            </fieldset>
+           
+           </form>
+    </body>
+</html>

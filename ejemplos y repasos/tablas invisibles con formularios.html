@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style>
+        table,
+        td,
+        th {
+            text-align: left;
+            border-collapse: collapse;
+            vertical-align: center;
+            background-color: orange;
+            color: greenyellow
+        }
+        
+        #bloquetabla table {
+            margin: auto;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        td {
+            width: 200px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario en tablas</h1>
+    <form action="pagina.php" method="POST">
+        <div id="bloquetabla">
+            <table>
+                <tr>
+                    <td>
+                        <p>Nombre: <input type="text" name="nombre" value="" size="20" placeholder="Nombre" /></p>
+                        <p>Apellidos: <input type="text" name="apellidos" value="" size="20" /></p>
+                    </td>
+                    <td>
+                        <p>Sexo: </p>
+                        <p><input type="radio" name="sexo" value="h" /> Hombre</p>
+                        <p><input type="radio" name="sexo" value="m" /> Mujer</p>
+                    </td>
+                    <td>
+                        <p>Seleccione: </p>
+                        <p><input type="checkbox" name="opcion1" checked="checked" value="opcion1" /> Soy friki.</p>
+                        <p><input type="checkbox" name="opcion2" value="opcion2" /> Soy vago.</p>
+                    </td>
+                    <td>
+                        <img src="Friki.png" width="200px" height="200px">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" ; style="text-align:center; background-color:aqua;">
+                        <p><input type="submit" name="enviar" value="ENVIAR" /></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <title>Formularios</title>
+    <meta charset="utf-8">
+    <style>
+        fieldset {
+            margin: 2px auto;
+            width: 80%;
+        }
+        
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        input:hover,
+        select:hover {
+            background-color: red;
+        }
+        
+        input:focus,
+        select:focus {
+            background-color: yellow;
+        }
+        
+        .centrado {
+            text-align: center;
+        }
+        
+        #boton-crear {
+            font-size: 2em;
+            padding: 0.5em;
+        }
+        
+        #caja1 {
+            text-align: left;
+        }
+        
+        h1,
+        h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        
+        p,
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        
+        * {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>iDESWEB</h1>
+    <h2>Formulario de registro</h2>
+    <div id="caja1">
+        <form action="" method="post">
+            <fieldset>
+                <legend>¿Quien eres?</legend>
+                <p>Nombre:<br><input required type="text" name="nombre" value=""> </p>
+                <p>Password:<br> <input required type="password" name="contraseña" value=""> </p>
+                <p>Correo electronico:<br> <input required type="mail" name="mail" value=""> </p>
+                <p>Fecha de nacimiento:<br>
+                    <input type="date" name="fecha">
+                </p>
+            </fieldset>
+
+        </form>
+    </div>
+    <div id="caja1">
+        <form action="" method="post">
+            <fieldset>
+                <legend>¿DE DONDE ERES?</legend>
+                <p>Ciudad:<br><input type="text" name="nombre" value=""> </p>
+                <p>Codigo postal:<br> <input required type="codigo postal" name="codigo postal" value=""> </p>
+                <p>Pais:<br>
+                    <select name="pais" value="">
+                        <option>España</option>
+                        <option>Francia</option>
+                        <option>Italia</option>
+                    </select>
+
+                </p>
+            </fieldset>
+
+        </form>
+    </div>
+    <div id="caja1">
+        <form action="" method="post">
+            <fieldset>
+                <legend> ¿COMO QUIERES INICIAR SESION?</legend>
+                <p>Nombre de usuario<br><input required type="text" name="nombre" value=""> </p>
+                <p>Contraseña:<br> <input required type="password" name="contraseña" value=""> </p>
+                <p>Vuelva a escribir la contraseña:<br> <input required type="password" name="contraseña" value=""> </p>
+            </fieldset>
+
+        </form>
+    </div>
+    <div id="caja1">
+        <form action="" method="post">
+            <fieldset>
+                <legend> ¿CONDICIONES DE REGISTRO?</legend>
+                <p>Deseo recibir ofertas de iDESWEB<br> </p>
+                <input type="radio" name="recibir" id="1" />Una vez al dia <input type="radio" name="recibir" id="1" />Una vez a la semana <input type="radio" name="recibir" id="1" />Una vez al mes </p>
+                <input type="checkbox" name="servicios" value="edad" />Acepto el acuerdo de los servicios, la declaracion de privacidad y la declaracion del uso de cookies.<br>
+            </fieldset>
+            <p class="centrado">
+                <input type="submit" value="Crear cuenta" id="boton-crear">
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>

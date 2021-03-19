@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title> Repaso formulario</title>
+    <meta charset="utf-8">
+    <style>
+        h1 {
+            background-color: aqua;
+            color: brown;
+        }
+        
+        * {
+            text-align: center;
+            background-color: olive;
+            color: cyan;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Formulario de Registros</h1>
+    <form action="pagina.php" method="POST">
+        <p style="color:yellow;">Nombre: <input type="text" name="nombre" maxlength="30" size="50" /></p>
+        <p style="color:yellowgreen; font-family:'Courier New', Courier, monospace">Apellidos: <input type="text" name="apellidos" size="60" /></p>
+        <p>Sexo: <input type="radio" name="sexo" value="h" style="color:red" /><span style="color:red">Hombre</span> <input type="radio" name="sexo" value="m"><span style="color:pink">Mujer</span> </p>
+        <p style="color:orange">Poblacion: <select name="provincia">
+                <option value="alicante"><span style="color:yellow">Alicante</span></option>
+                <option value="valencia" selected style="color:red">Valencia</option>
+                <option value="castellon" style="color:blue">Castellon</option>
+                </select>
+        </p>
+        <p>Información adicional: <textarea name="info" cols="50" rows="10" placeholder="Soy un hermoso..."></textarea></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+
+</html>

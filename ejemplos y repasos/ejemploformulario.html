@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Formularios</title>
+    <meta charset="utf-8">
+    <style>
+        fieldset {
+            margin: 2px auto;
+        }
+        
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        input:hover,
+        select:hover {
+            background-color: red;
+            color: blue;
+        }
+        
+        input:focus,
+        select:focus {
+            background-color: yellow;
+        }
+        
+        .centrado {
+            text-align: center;
+        }
+        
+        #boton-crear {
+            font-size: 2em;
+            padding: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FORMULARIO DE CONTACTO:</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>¿Quien eres?</legend>
+            <p>Nombre:<input type="text" name="nombre" value="nombre"> </p>
+            <p>Password: <input required type="password" name="contraseña" value="" placeholder="Escribe aqui tu contraseña"> </p>
+            <p>Fecha de nacimiento:
+                <input type="date" name="fecha"> &nbsp;&nbsp;&nbsp;<input type="time" name="time">
+            </p>
+        </fieldset>
+        <p class="centrado">
+            <input type="submit" value="Crear cuenta" id="boton-crear">
+        </p>
+    </form>
+    
+</body>
+
+</html>

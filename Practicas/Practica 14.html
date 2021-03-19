@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style>
+        h1 {
+            color: #FF00FF;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        * {
+            background-color: #58FAAC;
+        }
+        
+        #p1 p {
+            color: #FF0040;
+            font-weight: bold;
+        }
+        
+        th {
+            color: #0404B4
+        }
+        
+        #bloquetabla table {
+            vertical-align: middle;
+        }
+        
+        td,
+        th {
+            padding-left: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="pagina.php" method="POST">
+        <div id="bloquetabla">
+            <table style="align:center">
+                <h1>CATALOGO DE ARTE</h1>
+                <tr>
+                    <div id="p1">
+                        <P>Introduce los términos de búsqueda:</P><br></div>
+                    <tr>
+                        <th>OBRA</th>
+                        <th>TIPO</th>
+                        <th>DISPONIBILIDAD</th>
+                        <th>ESTILO</th>
+                    </tr>
+                    <td>
+                        <p>Título <input type="text" name="nombre" value="" size="20" /><br></p>
+                        <p>Autor <input type="text" name="apellidos" value="" size="15" /><br></p>
+                    </td>
+                    <td>
+                        <p><input type="checkbox" name="tipo" value="esc" /> Escultura</p>
+                        <p><input type="checkbox" name="tipo" value="arq" /> Arquitectura</p>
+                        <p><input type="checkbox" name="tipo" value="pint" /> Pintura</p>
+
+                    </td>
+                    <td>
+                        <p><input type="radio" name="disp" value="publ" /> Museo/ Acesso público</p>
+                        <p><input type="radio" name="disp" value="priv" /> Coleccion privada</p>
+
+                    </td>
+                    <td>
+                        <p>
+                            <select name="estilo">
+                            <option value="clas" selected="selected">Clásico</option>
+                            <option value="abs" >Abstracto</option>
+                            <option value="surr" >Surrealista</option>
+                            <option value="otro" >Otros</option>
+                        </select>
+                        </p>
+
+                    </td>
+
+
+                    </p>
+                </tr>
+            </table>
+        </div>
+
+        <table>
+            <tr>
+                <td style="vertical-align: top; color:#5FB404; padding: left 0px;">Háganos saber sus sugerencias: </td>
+                <td><textarea name="consulta" cols="40" rows="4">Me gustaría indicar que ...</textarea> </td>
+
+            </tr>
+
+        </table>
+        </div>
+        <p style="text-align: center;"><input type="submit" name="Buscar" value="Buscar" /></p>
+        </p>
+    </form>
+</body>
+
+</html>
